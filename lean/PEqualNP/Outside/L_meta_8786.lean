@@ -1,0 +1,5 @@
+import Mathlib
+import PEqualNP.Defs
+
+theorem PEqualNP.Outside.L_meta_8786 : PEqualNP.Represents.RepSizeAtMost (fun (u : Fin 6) (v : Fin 4) => (13124385 : ℕ).testBit (4 * u.val + v.val)) 11 := by
+  exact ⟨({ gates := [{ op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [0, 2] }, { op := PEqualNP.CircuitLowerBounds.GateOp.and, inputs := [10, 6] }, { op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [1, 2] }, { op := PEqualNP.CircuitLowerBounds.GateOp.and, inputs := [12, 7] }, { op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [3, 5] }, { op := PEqualNP.CircuitLowerBounds.GateOp.and, inputs := [14, 8] }, { op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [4, 5] }, { op := PEqualNP.CircuitLowerBounds.GateOp.and, inputs := [16, 9] }, { op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [11, 13] }, { op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [18, 15] }, { op := PEqualNP.CircuitLowerBounds.GateOp.or, inputs := [19, 17] }], output := 20 } : PEqualNP.CircuitLowerBounds.Circuit), by simp [PEqualNP.MetaComplexity.Monotone2], by decide, by decide +kernel⟩
